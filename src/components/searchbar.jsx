@@ -20,21 +20,31 @@ const Search = () => {
 
 
     useEffect(() => {
-        const getCity = async () => {
+        const fetchLocationData = async () => {
             try {
-                const response = await fetch('http://ip-api.com/json');
+
+                // Finding user's IP address
+                const response = await fetch('https://api.ipify.org/?format=json');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
-                const data = await response.json();
-                const city = data.city;
+                const ipData = await response.json();
+                const ipAddress = ipData.ip;
+
+                // Fetching location data using ipapi.co
+                const locationResponse = await fetch(`https://ipapi.co/${ipAddress}/json/`);
+                if (!locationResponse.ok) {
+                    throw new Error('Location data request failed');
+                }
+                const locationData = await locationResponse.json();
+                const city = locationData.city;
                 setcity(city);
             } catch (error) {
                 console.error('Error fetching location:', error);
             }
         };
 
-       getCity();
+        fetchLocationData();
     }, []);
    
 
