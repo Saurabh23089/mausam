@@ -25,5 +25,17 @@ Technologies Used
 - **Fetch API**: Used to make HTTP requests to fetch weather data from the OpenWeatherMap API and IP address information from ipify.org and ipapi.co.
 - **Tailwind CSS**: Utility-first CSS framework for styling the user interface.
 
+Installation 
+-----------------
+
+- **Clone the repository to your local machine**: git clone https://github.com/Saurabh23089/mausam.git
+- **Navigate to the project directory**: cd mausam
+- **Install dependencies**: npm install
+- **Start the Development server**: npm run dev
+- **View webapp**: Open your browser and go to [http://localhost:3000](http://localhost:3000) to view the app.
+
+
+
+
 
 
