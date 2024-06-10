@@ -9,6 +9,7 @@ Features
 - **Current Weather**: View current weather details including temperature, humidity, and wind speed for the searched city.
 - **Forecast**: Get a 5-day temperature details for the searched city for each day.
 - **Automatic Location Detection**: The app automatically detects the user's location to provide weather information for their current city.
+- **Toogle Modes**: User can also switch between light and dark mode.
 
 How to Use
 ----------
@@ -20,10 +21,11 @@ How to Use
 Technologies Used
 -----------------
 
+- **CSS**: Used for adding styles to make UI visually appealing.
 - **React**: Frontend framework for building the user interface.
 - **JavaScript (ES6+)**: Programming language used for application logic.
 - **Fetch API**: Used to make HTTP requests to fetch weather data from the OpenWeatherMap API and IP address information from ipify.org and ipapi.co.
-- **Tailwind CSS**: Utility-first CSS framework for styling the user interface.
+
 
 Installation 
 -----------------
